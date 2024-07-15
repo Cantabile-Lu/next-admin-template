@@ -56,22 +56,7 @@ export default async function LocaleLayout({
             <body>
                 <ConfigProvider locale={localezh_cn}>
                     <NextIntlClientProvider messages={messages}>
-                        <AntdRegistry>
-                            {/*<Layout style={layoutStyle}>*/}
-                            {/*    <Sider width="25%" style={siderStyle}>*/}
-                            {/*        Sider*/}
-                            {/*    </Sider>*/}
-                            {/*    <Layout>*/}
-                            {/*        <Header style={headerStyle}>Header</Header>*/}
-                            {/*        <Content style={contentStyle}>*/}
-                            {/*            Content*/}
-                            {/*        </Content>*/}
-                            {/*        <Footer style={footerStyle}>Footer</Footer>*/}
-                            {/*    </Layout>*/}
-                            {/*</Layout>*/}
-                            <div className="border-4"></div>
-                            {children}
-                        </AntdRegistry>
+                        <AntdRegistry>{children}</AntdRegistry>
                     </NextIntlClientProvider>
                 </ConfigProvider>
             </body>

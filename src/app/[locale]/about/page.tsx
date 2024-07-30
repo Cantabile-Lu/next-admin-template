@@ -6,7 +6,7 @@ const App = () => {
     return (
         <Layout>
             <div>
-                {Array(10)
+                {Array(100)
                     .fill(0)
                     .map((_, i) => (
                         <div key={i}>{i}</div>

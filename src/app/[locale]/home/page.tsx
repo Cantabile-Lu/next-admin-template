@@ -1,8 +1,8 @@
-import { FC, PropsWithChildren } from "react";
+import { FC } from "react";
 
 interface Props {}
 
-const App: FC<PropsWithChildren<Props>> = (props) => {
+const App: FC<Props> = (props) => {
     return <div className="border-2 border-b-slate-900">hello Home</div>;
 };
 

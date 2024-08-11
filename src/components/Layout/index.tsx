@@ -7,7 +7,7 @@ interface Props {}
 const Layout: FC<PropsWithChildren<Props>> = (props) => {
     const { children } = props;
     return (
-        <div style={{ transform: "translateX(200px)" }}>
+        <div>
             <Header></Header>
             <main>{children}</main>
             <Footer></Footer>

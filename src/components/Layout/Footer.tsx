@@ -5,9 +5,9 @@ import { Link } from "@/i18n";
 interface Props {}
 
 const data = [
-    { key: "/about", label: "关于我们" },
-    { key: "/", label: "首页" },
-    { key: "/login", label: "登录" },
+    { key: "/about", label: "中间件路由拦截" },
+    { key: "/", label: "拦截路由" },
+    { key: "/cache", label: "缓存" },
 ];
 const Footer: FC<Props> = (props) => {
     return (

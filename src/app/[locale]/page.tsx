@@ -1,7 +1,10 @@
-import Layout from "@/components/Layout";
 import { Link } from "@/i18n";
 
 interface Props {}
+
+export const metadata = {
+    title: "路由拦截",
+};
 
 const getData = async () => {
     const data = await fetch("http://localhost:3000/en_US/api");
@@ -13,7 +16,7 @@ const App = async () => {
         console.log(`🚀🚀🚀🚀🚀-> in page.tsx on 7`);
     };
     return (
-        <Layout>
+        <>
             <div className={"grid grid-cols-3 gap-[20px]"}>
                 {Array(10)
                     .fill(0)
@@ -21,14 +24,14 @@ const App = async () => {
                         <Link key={i} href={`/photos/${i}`} passHref>
                             <div
                                 key={i}
-                                className={`border-1 flex h-[70px] items-center justify-center bg-amber-800`}
+                                className={`border-1 bg-amber-800 flex h-[70px] items-center justify-center`}
                             >
                                 {i}
                             </div>
                         </Link>
                     ))}
             </div>
-        </Layout>
+        </>
     );
 };
 

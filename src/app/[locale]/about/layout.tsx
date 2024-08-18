@@ -1,5 +1,8 @@
-import Layout from "@/components/Layout";
 import { ReactNode } from "react";
+
+export const metadata = {
+    title: "中间件拦截",
+};
 export default async function PageLayout({
     top,
     children,
@@ -9,10 +12,8 @@ export default async function PageLayout({
 }) {
     return (
         <div>
-            <Layout>
-                {top}
-                {children}
-            </Layout>
+            {top}
+            {children}
         </div>
     );
 }

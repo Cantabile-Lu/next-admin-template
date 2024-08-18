@@ -9,7 +9,7 @@ const Layout: FC<PropsWithChildren<Props>> = (props) => {
     return (
         <div>
             <Header></Header>
-            <main>{children}</main>
+            <main className={"scrollbar-hide"}>{children}</main>
             <Footer></Footer>
         </div>
     );

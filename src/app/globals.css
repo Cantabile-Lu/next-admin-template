@@ -30,4 +30,5 @@ body {
 main{
   height: calc(100dvh - 1.2rem);
   overflow: scroll;
+  overflow-x: hidden;
 }
